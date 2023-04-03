@@ -1,0 +1,16 @@
+- main.go
+- cmd/
+  - root.go
+  - schema-validation.go
+  - lint.go
+  - api-validation.go
+  - validator.go
+  - noname.go
+
+```
+go build && go install 
+api-cli api-validation validator --file data/invalid.json
+api-cli api-validation validator --file data/invalid.yaml
+api-cli api-validation validator --file data/valid.yaml 
+api-cli api-validation validator --file data/valid.json
+```
